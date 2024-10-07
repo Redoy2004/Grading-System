@@ -1,7 +1,7 @@
 //Grading System for Diploma in Engineering
 
   document.write("<h6> Grading System for Diploma in Engineering </h6>")
-var mark = 76;
+var mark = parseFloat(prompt("Enter the mark: "));
 
 if(mark >= 80 && mark <= 100)
 {
@@ -39,7 +39,10 @@ else if( mark >= 40 && mark <= 44)
 {
     document.write("CGPA: D")
 }
-else
+else if(mark>=0 && mark <=39)
 {
     document.write("Result: F")
+}
+else{
+    document.write("Undifine mark")
 }
